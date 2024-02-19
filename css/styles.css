@@ -4,7 +4,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
-  
+
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(79, 72%, 55%);
@@ -79,7 +79,9 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-bold);
 }
@@ -116,7 +118,7 @@ img {
   margin-bottom: 3rem;
 }
 
-.section__title, 
+.section__title,
 .section__title-border {
   font-size: var(--big-font-size);
   letter-spacing: 1.5px;
@@ -148,7 +150,8 @@ img {
 }
 
 .main {
-  overflow: hidden; /* For animation ScrollReveal */
+  overflow: hidden;
+  /* For animation ScrollReveal */
 }
 
 .color-red {
