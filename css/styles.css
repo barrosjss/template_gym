@@ -20,17 +20,17 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Red Hat Display', sans-serif;
-  --second-font: 'Kaushan Script', cursive;
+  --body-font: "Red Hat Display", sans-serif;
+  --second-font: "Kaushan Script", cursive;
   --biggest-font-size: 2rem;
   --bigger-font-size: 1.5rem;
   --big-font-size: 1.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --font-bold: 700;
@@ -51,8 +51,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -113,7 +113,7 @@ img {
 .section__data {
   display: flex;
   flex-direction: column;
-  row-gap: .75rem;
+  row-gap: 0.75rem;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -135,7 +135,7 @@ img {
 
 .section__titles {
   display: flex;
-  column-gap: .75rem;
+  column-gap: 0.75rem;
   justify-content: center;
 }
 
@@ -170,7 +170,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  transition: background .3s;
+  transition: background 0.3s;
 }
 
 .nav {
@@ -188,7 +188,7 @@ img {
 
 .nav__logo {
   align-items: center;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
   font-weight: var(--font-bold);
 }
 
@@ -204,7 +204,7 @@ img {
 @media screen and (max-width: 1023px) {
   .nav__menu {
     position: fixed;
-    background-color: hsla(180, 12%, 8%, .8);
+    background-color: hsla(180, 12%, 8%, 0.8);
     backdrop-filter: blur(32px);
     -webkit-backdrop-filter: blur(32px);
     top: 0;
@@ -212,7 +212,7 @@ img {
     width: 80%;
     height: 100%;
     border-left: 2px solid var(--first-color-gray);
-    transition: right .3s;
+    transition: right 0.3s;
   }
 }
 
@@ -225,7 +225,7 @@ img {
 
 .nav__link {
   color: var(--title-color);
-  transform: color .3s;
+  transform: color 0.3s;
 }
 
 .nav__link:hover {
@@ -248,48 +248,98 @@ img {
 
 /* Change background header */
 
-
 /* Active link */
 
-
 /*=============== HOME ===============*/
+.home {
+  position: relative;
+  padding-bottom: 0;
+}
 
+.home__container {
+  padding-top: 4rem;
+  row-gap: 3rem;
+}
+
+.home__data {
+  text-align: center;
+}
+
+.home__subtitle {
+  font-size: var(--bigger-font-size);
+  -webkit-text-stroke: 1px var(--title-color);
+  color: transparent;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-black);
+  margin: 0.5rem 0;
+}
+
+.home__subtitle,
+.home__title {
+  letter-spacing: 1.5px;
+}
+
+.home__description {
+  margin-bottom: 2.5rem;
+}
+
+.home__triangle {
+  height: 325px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.home__triangle-1 {
+  width: 105px;
+  background-color: var(--first-color);
+}
+
+.home__triangle-2 {
+  width: 205px;
+  background-color: var(--first-color-alt);
+}
+
+.home__triangle-3 {
+  width: 305px;
+  background-color: var(--first-color-dark);
+}
+
+.home__img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 350px;
+  margin: 0 auto;
+}
 
 /*=============== BUTTON ===============*/
 
-
 /*=============== LOGOS ===============*/
-
 
 /*=============== PROGRAM ===============*/
 
-
 /*=============== CHOOSE ===============*/
-
 
 /*=============== PRICING ===============*/
 
-
 /*=============== CALCULATE ===============*/
-
 
 /*=============== FOOTER ===============*/
 
-
 /*=============== SCROLL BAR ===============*/
-
 
 /*=============== SCROLL UP ===============*/
 
-
 /* Show Scroll Up*/
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-
 /* For medium devices */
-
 
 /* For large devices */
